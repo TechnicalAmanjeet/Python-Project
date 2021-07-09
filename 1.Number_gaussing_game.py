@@ -42,13 +42,15 @@ def computer_gauss(user_min,user_max):
       user_max = gauss_by_computer-1
     elif(user_choice.upper()=='C'):
       print(f"\n Yey! computer has gaussed your number.. you gaussed {gauss_by_computer}.. ")
+      input("\n please press enter to go ahead...")
       break
 
 
 
 while(1):
   os.system("clear")
-  print("""         ********** Number Gausing Game Project *********
+  os.system("clear")
+  print("""        ********** Number Gausing Game Project *********
   
   
    Press 1 : if you want to gauss no. beetween by default no... 
@@ -96,9 +98,11 @@ while(1):
     computer_gauss(1,100)
 
   elif(ch==4):
+    # print("\n Gauss a number in your mind... ")
+    input("\n Gauss a number in your mind and press enter to continue...")
     lower = int(input("\n Enter your lower bound : "))
     heigher = int(input("\n Enter your heigher bound : "))
-    print(f"\n gauess a number beetween {lower}-{heigher} in you mind... ")
+    print(f"\n You have gauessed a number beetween {lower}-{heigher} in your mind... ")
     input("\n press enter to continue... ")
     computer_gauss(lower,heigher)
 
