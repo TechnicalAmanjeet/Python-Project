@@ -2,6 +2,7 @@ import random
 import os
 
 def gauss(min,max):
+
   result=random.randint(min,max)
   while(1):
     try:
